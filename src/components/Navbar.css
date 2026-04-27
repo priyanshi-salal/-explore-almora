@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #466684; 
+}
+
+/* Heading */
+.header h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Nav links container */
+.header nav {
+  display: flex;
+  gap: 25px;
+}
+
+/* Links */
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+/* Hover effect */
+.header nav a:hover {
+  color: #f1c40f;
+}
+
+/* Underline animation */
+.header nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #f1c40f;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.header nav a:hover::after {
+  width: 100%;
+}

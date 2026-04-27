@@ -1,0 +1,174 @@
+/* Tourism Page */
+.tourism-page {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f7;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Hero */
+.tourism-hero {
+  background: linear-gradient(135deg, #547a94, #3d5a6f);
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 10;
+}
+
+.tourism-hero h1 {
+  font-size: 38px;
+  margin: 0;
+  z-index: 10;
+}
+
+.tourism-hero p {
+  font-size: 17px;
+  margin: 0;
+  z-index: 10;
+}
+
+/* SECTION CARD */
+.tourism-section {
+  display: flex;
+  gap: 40px;
+  margin: 40px auto;
+  margin-top: 40px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  align-items: center;
+  overflow: visible;
+  position: relative;
+  z-index: 5;
+  max-width: 100%;
+  width: 100%;
+}
+
+
+
+/* Reverse */
+.tourism-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* LEFT IMAGES GRID */
+.tourism-images-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  height: fit-content;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+/* IMAGE STYLE */
+.tourism-images-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+/* HOVER EFFECT - Images Only */
+.tourism-images-grid img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* RIGHT TEXT */
+.tourism-content {
+ flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  min-height: fit-content;
+  position: relative;
+  z-index: 3;
+  word-break: break-word;
+  hyphens: auto;
+  margin: 0;
+}
+
+.tourism-content h2 {
+  font-size: 28px;
+  /* margin: 0 0 15px 0; */
+  padding: 0;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.tourism-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  margin: 0 0 12px 0;
+  padding: 0;
+  text-align: justify;
+
+}
+
+.tourism-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .tourism-section,
+  .tourism-section.reverse {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  .tourism-images-grid,
+  .tourism-content {
+    width: 100%;
+  }
+
+  .tourism-images-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tourism-images-grid img {
+    height: 150px;
+  }
+
+  .tourism-hero h1 {
+    font-size: 28px;
+  }
+
+  .tourism-hero p {
+    font-size: 14px;
+  }
+
+  .tourism-content h2 {
+    font-size: 22px;
+  }
+
+  .tourism-content p {
+    font-size: 14px;
+  }
+}

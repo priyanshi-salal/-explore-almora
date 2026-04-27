@@ -1,0 +1,99 @@
+/* Page */
+.culture-page {
+  padding: 20px;
+  background: #f4f6f8;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.culture-hero {
+  text-align: center;
+  background: linear-gradient(135deg, #547a94, #3d5a6f);
+  color: white;
+  padding: 20px 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.culture-hero h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.culture-hero p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Section Layout */
+.culture-section {
+  display: flex;
+  gap: 25px;
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+/* Alternate Layout */
+.culture-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Hover Effect */
+.culture-section:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.section-image {
+  width: 50%;
+}
+
+.section-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Content */
+.section-content {
+  width: 50%;
+}
+
+.section-content h2 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+.section-content p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .culture-section {
+    flex-direction: column;
+  }
+
+  .culture-section.reverse {
+    flex-direction: column;
+  }
+
+  .section-image,
+  .section-content {
+    width: 100%;
+  }
+
+  .section-image img {
+    height: 220px;
+  }
+}
