@@ -1,18 +1,44 @@
-# React + Vite
+# 🌄 Explore Almora
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Explore Almora is a React + Vite based web application that showcases the beauty, culture, and tourist attractions of Almora.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
+- Tourist places information
+- Clean and simple UI
+- Responsive design
+- Fast performance using Vite
+- Easy navigation
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🛠️ Tech Stack
+- React.js
+- Vite
+- HTML
+- CSS
+- JavaScript
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## ⚙️ How to Run Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Install dependencies
+npm install
+
+### Start project
+npm run dev
+
+### Open in browser
+http://localhost:5173
+
+---
+
+## 🎯 Purpose
+This project is built for learning React and showcasing Almora tourism information.
+
+---
+
+## 👩‍💻 Developer
+Priyanshi Salal
